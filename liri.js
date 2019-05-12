@@ -1,11 +1,19 @@
 // read and set any environment variables with the dotenv package
 require("dotenv").config();
 // import the keys.js file and store it in a variable
-var keys = require("./keys.js");
+const keys = require("./keys.js");
 // access keys information
-var spotify = new Spotify(keys.spotify);
+const Spotify = require("node-spotify-api");
+const spotify = new Spotify(keys.spotify);
 
 // make it so liri.js can take in one of the following commands:
+console.log(process.argv);
+let command = process.argv[2];
+console.log(command);
+let input = process.argv[3];
+console.log(input);
+
+
     // concert-this
     // spotify-this-song
     // movie-this
