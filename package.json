@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mjsaylor/nodeLIRI/issues"
   },
-  "homepage": "https://github.com/mjsaylor/nodeLIRI#readme"
+  "homepage": "https://github.com/mjsaylor/nodeLIRI#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  }
 }
