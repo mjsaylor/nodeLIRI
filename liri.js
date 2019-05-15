@@ -45,53 +45,24 @@ if (command == "concert-this") {
 
 }
 // spotify-this-song
-if (command == "spotify-this-song") {
-    // if no song is provided, default to "The Sign" by Ace of Base
-    if (input == undefined) {
-        spotify
-            .request('https://api.spotify.com/v1/tracks/3DYVWvPh3kGwPasp7yjahc')
-            .then(function (data) {
-                // console.log(data);
-                //   console.log(JSON.stringify(data, null, 2));
-                // render Artist
-                let songArtist = data.album.artists[0].name
-                // render song name
-                let songName = data.name
-                // render a preview link of the song from Spotify
-                let songPreview = data.album.preview_url
-                // render the album the song is on
-                let songAlbum = data.album.name
-                console.log(`
-                    Title: ${songName}
-                    Artist/Band: ${songArtist}
-                    Album: ${songAlbum}
-                    `)
-                if (songPreview == null) {
-                    console.log("I'm sorry, there is no song preview available")
-                } else {
-                    console.log(songPreview)
-                }
-            })
-            .catch(function (err) {
-                console.error('Error occurred: ' + err);
-            });
-    } else {
-        // console.log("I am searching Spotify API")
-        // utilize the node-spotify-api package to retrieve song information
-        spotify.search({ type: 'track', query: input }, function (err, data) {
-            if (err) {
-                return console.log('Error occurred: ' + err);
-            }
+function spotifyThisSong(input) {
+// if no song is provided, default to "The Sign" by Ace of Base
+if (input == undefined) {
+    spotify
+        .request('https://api.spotify.com/v1/tracks/3DYVWvPh3kGwPasp7yjahc')
+        .then(function (data) {
+            // console.log(data);
             //   console.log(JSON.stringify(data, null, 2));
             // render Artist
-            let songArtist = data.tracks.items[0].artists[0].name
+            let songArtist = data.album.artists[0].name
             // render song name
+            let songName = data.name
             // render a preview link of the song from Spotify
-            let songPreview = data.tracks.preview_url
+            let songPreview = data.album.preview_url
             // render the album the song is on
-            let songAlbum = data.tracks.items[0].album.name
+            let songAlbum = data.album.name
             console.log(`
-                Title: ${input}
+                Title: ${songName}
                 Artist/Band: ${songArtist}
                 Album: ${songAlbum}
                 `)
@@ -100,9 +71,42 @@ if (command == "spotify-this-song") {
             } else {
                 console.log(songPreview)
             }
-
+        })
+        .catch(function (err) {
+            console.error('Error occurred: ' + err);
         });
-    }
+} else {
+    // console.log("I am searching Spotify API")
+    // utilize the node-spotify-api package to retrieve song information
+    spotify.search({ type: 'track', query: input }, function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+        //   console.log(JSON.stringify(data, null, 2));
+        // render Artist
+        let songArtist = data.tracks.items[0].artists[0].name
+        // render song name
+        // render a preview link of the song from Spotify
+        let songPreview = data.tracks.preview_url
+        // render the album the song is on
+        let songAlbum = data.tracks.items[0].album.name
+        console.log(`
+            Title: ${input}
+            Artist/Band: ${songArtist}
+            Album: ${songAlbum}
+            `)
+        if (songPreview == null) {
+            console.log("I'm sorry, there is no song preview available")
+        } else {
+            console.log(songPreview)
+        }
+
+    });
+}
+}
+
+if (command == "spotify-this-song") {
+    spotifyThisSong(input);
 }
 
 
@@ -148,17 +152,22 @@ if (command == "movie-this") {
 }
 
 // do-what-it-says
+if (command == "do-what-it-says") {
     //using fs Node package, take text inside of random.txt and use it to call one of LIRI's commands
     fs.readFile("random.txt", "utf8", function(error, data) {
         if (error) {
             return console.log(error);
         }
+        // console.log(data)
+        var dataArr = data.split(",");
+        // console.log(dataArr)
+
+        spotifyThisSong(dataArr[1])
 
 
-        
     })
     // run spotify-this-song for "I want it That way"
-
+}
 
 
 
