@@ -16,6 +16,7 @@ const spotify = new Spotify(keys.spotify);
 // spotify-this-song
 // movie-this
 // do-what-it-says
+
 // console.log(process.argv);
 let command = process.argv[2];
 let input = process.argv[3];
@@ -161,12 +162,10 @@ if (command == "do-what-it-says") {
         // console.log(data)
         var dataArr = data.split(",");
         // console.log(dataArr)
-
+        // run spotify-this-song for "I want it That way"   
         spotifyThisSong(dataArr[1])
-
-
     })
-    // run spotify-this-song for "I want it That way"
+    
 }
 
 
