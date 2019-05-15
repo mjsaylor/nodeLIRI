@@ -1,197 +1,653 @@
-{ album:
-   { album_type: 'compilation',
-     artists: [ [Object] ],
-     available_markets:
-      [ 'AD',
-        'AE',
-        'AR',
-        'AT',
-        'AU',
-        'BE',
-        'BG',
-        'BH',
-        'BO',
-        'BR',
-        'CA',
-        'CH',
-        'CL',
-        'CO',
-        'CR',
-        'CY',
-        'CZ',
-        'DE',
-        'DK',
-        'DO',
-        'DZ',
-        'EC',
-        'EE',
-        'EG',
-        'ES',
-        'FI',
-        'FR',
-        'GB',
-        'GR',
-        'GT',
-        'HK',
-        'HN',
-        'HU',
-        'ID',
-        'IE',
-        'IL',
-        'IN',
-        'IS',
-        'IT',
-        'JO',
-        'JP',
-        'KW',
-        'LB',
-        'LI',
-        'LT',
-        'LU',
-        'LV',
-        'MA',
-        'MC',
-        'MT',
-        'MX',
-        'MY',
-        'NI',
-        'NL',
-        'NO',
-        'NZ',
-        'OM',
-        'PA',
-        'PE',
-        'PH',
-        'PL',
-        'PS',
-        'PT',
-        'PY',
-        'QA',
-        'RO',
-        'SA',
-        'SE',
-        'SG',
-        'SK',
-        'SV',
-        'TH',
-        'TN',
-        'TR',
-        'TW',
-        'US',
-        'UY',
-        'VN',
-        'ZA' ],
-     external_urls:
-      { spotify: 'https://open.spotify.com/album/0nQFgMfnmWrcWDOQqIgJL7' },
-     href: 'https://api.spotify.com/v1/albums/0nQFgMfnmWrcWDOQqIgJL7',
-     id: '0nQFgMfnmWrcWDOQqIgJL7',
-     images: [ [Object], [Object], [Object] ],
-     name: 'Greatest Hits',
-     release_date: '2008-11-14',
-     release_date_precision: 'day',
-     total_tracks: 16,
-     type: 'album',
-     uri: 'spotify:album:0nQFgMfnmWrcWDOQqIgJL7' },
-  artists:
-   [ { external_urls: [Object],
-       href: 'https://api.spotify.com/v1/artists/5ksRONqssB7BR161NTtJAm',
-       id: '5ksRONqssB7BR161NTtJAm',
-       name: 'Ace of Base',
-       type: 'artist',
-       uri: 'spotify:artist:5ksRONqssB7BR161NTtJAm' } ],
-  available_markets:
-   [ 'AD',
-     'AE',
-     'AR',
-     'AT',
-     'AU',
-     'BE',
-     'BG',
-     'BH',
-     'BO',
-     'BR',
-     'CA',
-     'CH',
-     'CL',
-     'CO',
-     'CR',
-     'CY',
-     'CZ',
-     'DE',
-     'DK',
-     'DO',
-     'DZ',
-     'EC',
-     'EE',
-     'EG',
-     'ES',
-     'FI',
-     'FR',
-     'GB',
-     'GR',
-     'GT',
-     'HK',
-     'HN',
-     'HU',
-     'ID',
-     'IE',
-     'IL',
-     'IN',
-     'IS',
-     'IT',
-     'JO',
-     'JP',
-     'KW',
-     'LB',
-     'LI',
-     'LT',
-     'LU',
-     'LV',
-     'MA',
-     'MC',
-     'MT',
-     'MX',
-     'MY',
-     'NI',
-     'NL',
-     'NO',
-     'NZ',
-     'OM',
-     'PA',
-     'PE',
-     'PH',
-     'PL',
-     'PS',
-     'PT',
-     'PY',
-     'QA',
-     'RO',
-     'SA',
-     'SE',
-     'SG',
-     'SK',
-     'SV',
-     'TH',
-     'TN',
-     'TR',
-     'TW',
-     'US',
-     'UY',
-     'VN',
-     'ZA' ],
-  disc_number: 1,
-  duration_ms: 189786,
-  explicit: false,
-  external_ids: { isrc: 'SEVJH0803404' },
-  external_urls:
-   { spotify: 'https://open.spotify.com/track/3DYVWvPh3kGwPasp7yjahc' },
-  href: 'https://api.spotify.com/v1/tracks/3DYVWvPh3kGwPasp7yjahc',
-  id: '3DYVWvPh3kGwPasp7yjahc',
-  is_local: false,
-  name: 'The Sign',
-  popularity: 55,
-  preview_url:
-   'https://p.scdn.co/mp3-preview/5ca0168d6b58e0f993b2b741af90ecc7c9b16893?cid=cbd1b91c21684032b29c56fbde3ca3d0',
-  track_number: 1,
-  type: 'track',
-  uri: 'spotify:track:3DYVWvPh3kGwPasp7yjahc' }
+I am searching Bands in Town API
+[
+  {
+    "id": "1013765935",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/1013765935?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-05-15T19:30:00",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Evanston",
+      "latitude": "42.0408766",
+      "name": "Space",
+      "region": "IL",
+      "longitude": "-87.6800965"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1013765935?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100156311",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100156311?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-05-17T19:00:00",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Brookfield",
+      "latitude": "43.0605671",
+      "name": "Sharon Lynne Wilson Center for the Arts",
+      "region": "WI",
+      "longitude": "-88.1064787"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100156311?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100695901",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100695901?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-05-25T20:00:51",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Virginia Beach",
+      "latitude": "36.8412484",
+      "name": "Zeiders American Dream Theater",
+      "region": "VA",
+      "longitude": "-76.1345611"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100695901?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "1014464677",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/1014464677?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "2019-04-05T10:00:00",
+    "datetime": "2019-05-28T20:00:00",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Philadelphia",
+      "latitude": "39.9520711",
+      "name": "World Café Live  - Bobby McFerrin with Ranky Tanky",
+      "region": "PA",
+      "longitude": "-75.18514479999999"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1014464677?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "1014465024",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/1014465024?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "2019-04-05T10:00:00",
+    "datetime": "2019-05-29T20:00:00",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Philadelphia",
+      "latitude": "39.9520711",
+      "name": "World Café Live  - Bobby McFerrin with Ranky Tanky",
+      "region": "PA",
+      "longitude": "-75.18514479999999"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1014465024?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101016437",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101016437?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-05-31T20:00:20",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Burlington",
+      "latitude": "44.4758825",
+      "name": "Discover Jazz Festival - Bobby McFerrin with Ranky Tanky",
+      "region": "VT",
+      "longitude": "-73.21207199999999"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101016437?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101016457",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101016457?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-06-02T17:00:34",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Rockport",
+      "latitude": "42.64971750000001",
+      "name": "Rockport Music - Bobby McFerrin with Ranky Tanky",
+      "region": "MA",
+      "longitude": "-70.6157308"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101016457?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101049806",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101049806?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-03T22:00:17",
+    "description": "",
+    "venue": {
+      "country": "Spain",
+      "city": "Barcelona",
+      "latitude": "41.38506389999999",
+      "name": "CaixaForum Barcelona",
+      "region": "",
+      "longitude": "2.1734035"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101049806?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101049796",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101049796?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-04T22:00:57",
+    "description": "",
+    "venue": {
+      "country": "Spain",
+      "city": "Zaragoza",
+      "latitude": "41.652165",
+      "name": "CaixaForum Zaragoza",
+      "region": "",
+      "longitude": "-0.8941629999999998"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101049796?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101016503",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101016503?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-05T20:00:25",
+    "description": "",
+    "venue": {
+      "country": "Denmark",
+      "city": "København",
+      "latitude": "55.6760968",
+      "name": "Copenhagen Jazz Festival",
+      "region": "",
+      "longitude": "12.5683372"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101016503?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101057393",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101057393?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-06T19:00:45",
+    "description": "",
+    "venue": {
+      "country": "Germany",
+      "city": "Berlin",
+      "latitude": "52.52000659999999",
+      "name": "Wassermusik 2019 - Haus der Kulturen der Welt",
+      "region": "",
+      "longitude": "13.404954"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101057393?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100862588",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100862588?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-07T19:00:31",
+    "description": "",
+    "venue": {
+      "country": "Germany",
+      "city": "Rudolstadt",
+      "latitude": "50.71897",
+      "name": "Rudolstadt Festival ",
+      "region": "",
+      "longitude": "11.3393301"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100862588?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101049835",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101049835?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-11T21:00:06",
+    "description": "",
+    "venue": {
+      "country": "Spain",
+      "city": "Madrid",
+      "latitude": "40.4167754",
+      "name": "CaixaForum Madrid",
+      "region": "",
+      "longitude": "-3.7037902"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101049835?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101017009",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101017009?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-12T19:00:57",
+    "description": "",
+    "venue": {
+      "country": "Netherlands",
+      "city": "Rotterdam",
+      "latitude": "51.9244201",
+      "name": "North Sea Jazz Festival",
+      "region": "",
+      "longitude": "4.4777326"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101017009?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101092293",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101092293?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-14T16:15:43",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "New York",
+      "latitude": "40.7700703",
+      "name": "SummerStage in Central Park",
+      "region": "NY",
+      "longitude": "-73.9580246"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Free",
+        "url": "https://www.bandsintown.com/t/101092293?app_id=codingbootcamp\\\"&came_from=267&custom=true&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101050468",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101050468?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "2019-04-15T10:00:43",
+    "datetime": "2019-07-20T20:00:29",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Ventura",
+      "latitude": "34.2804923",
+      "name": "Ventura Music Festival",
+      "region": "CA",
+      "longitude": "-119.2945199"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101050468?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101017784",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101017784?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "2019-04-04T10:00:05",
+    "datetime": "2019-07-21T19:00:33",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Phoenix",
+      "latitude": "33.6629442",
+      "name": "Musical Instrument Museum",
+      "region": "AZ",
+      "longitude": "-112.0182329"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101017784?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100741939",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100741939?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-23T19:30:27",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Seattle",
+      "latitude": "47.614743",
+      "name": "Dimitriou's Jazz Alley",
+      "region": "WA",
+      "longitude": "-122.33934"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100741939?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100741945",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100741945?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-24T19:30:08",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Seattle",
+      "latitude": "47.614743",
+      "name": "Dimitriou's Jazz Alley",
+      "region": "WA",
+      "longitude": "-122.33934"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100741945?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101050433",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101050433?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-07-27T20:30:30",
+    "description": "",
+    "venue": {
+      "country": "Canada",
+      "city": "Calgary",
+      "latitude": "51.0537064",
+      "name": "Calgary Folk Music Festival – Prince's Island Park",
+      "region": "",
+      "longitude": "-114.0718864"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101050433?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101113425",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101113425?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2019-09-21T19:00:42",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Fish Creek",
+      "latitude": "45.1277423",
+      "name": "Door Community Auditorium - Shemekia Copeland and Ranky Tanky",
+      "region": "WI",
+      "longitude": "-87.2472693"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101113425?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "1014529201",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/1014529201?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2020-01-23T19:30:00",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Denver",
+      "latitude": "39.6742226",
+      "name": "Newman Center for the Performing Arts",
+      "region": "CO",
+      "longitude": "-104.9599679"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1014529201?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "100870437",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/100870437?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2020-03-12T19:30:00",
+    "description": "Charleston Symphony Orchestra",
+    "venue": {
+      "country": "United States",
+      "city": "Charleston",
+      "latitude": "32.7791432",
+      "name": "Ranky Tanky with the CSO",
+      "region": "SC",
+      "longitude": "-79.9248669"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/100870437?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101146898",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101146898?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "2019-05-20T12:00:00",
+    "datetime": "2020-04-16T20:00:02",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Little Rock",
+      "latitude": "34.7464809",
+      "name": "The Oxford American Archetypes & Troubadours Series",
+      "region": "AR",
+      "longitude": "-92.28959479999999"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101146898?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  },
+  {
+    "id": "101057975",
+    "artist_id": "13860859",
+    "url": "https://www.bandsintown.com/e/101057975?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+    "on_sale_datetime": "",
+    "datetime": "2020-04-17T20:00:12",
+    "description": "",
+    "venue": {
+      "country": "United States",
+      "city": "Germantown",
+      "latitude": "35.0867577",
+      "name": "GPAC | Germantown Performing Arts Center",
+      "region": "TN",
+      "longitude": "-89.8100858"
+    },
+    "lineup": [
+      "Ranky Tanky"
+    ],
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/101057975?app_id=codingbootcamp\\\"&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ]
+  }
+]

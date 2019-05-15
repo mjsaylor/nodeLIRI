@@ -1,3 +1,5 @@
+const Axios = require("axios")
+const moment = require("moment")
 // require APIs
 const Spotify = require("node-spotify-api");
 // read and set any environment variables with the dotenv package
@@ -7,27 +9,43 @@ const keys = require("./keys.js");
 // access keys information
 const spotify = new Spotify(keys.spotify);
 
+
 // make it so liri.js can take in one of the following commands:
-// console.log(process.argv);
-let command = process.argv[2];
-let input = process.argv[3];
-
-
 // concert-this
 // spotify-this-song
 // movie-this
 // do-what-it-says
+// console.log(process.argv);
+let command = process.argv[2];
+let input = process.argv[3];
 
 // concert-this
 if (command == "concert-this") {
     console.log("I am searching Bands in Town API")
     // search Bands in Town Artist Events API for an artist
-    // render name of venue
+    Axios
+        .get(`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp"`)
+        .then(function (response){
+            // console.log(response.data)
+            // console.log(JSON.stringify(response.data, null, 2))
+            // render name of venue
+    let venue = response.data[0].venue.name
     // render venue location
+    let venueCity = response.data[0].venue.city
+    let venueState = response.data[0].venue.region
     // render date of the event (use moment to format as MM/DD/YYYY)
+    let eventDate = moment(response.data[0].datetime, "YYYY-MM-DD, h:mm:ss").format("MM/DD/YYYY")
+    console.log(`
+        Venue: ${venue}
+        Location: ${venueCity}, ${venueState}
+        Date: ${eventDate}
+        `)
+        })
+    
 }
 // spotify-this-song
 if (command == "spotify-this-song") {
+    // if no song is provided, default to "The Sign" by Ace of Base
     if (input == undefined) {
         spotify
             .request('https://api.spotify.com/v1/tracks/3DYVWvPh3kGwPasp7yjahc')
@@ -42,9 +60,11 @@ if (command == "spotify-this-song") {
                 let songPreview = data.album.preview_url
                 // render the album the song is on
                 let songAlbum = data.album.name
-                console.log("Title: ", songName)
-                console.log("Artist/Band:", songArtist)
-                console.log("Album: ", songAlbum)
+                console.log(
+                `Title: ${songName}
+                Artist/Band: ${songArtist}
+                Album: ${songAlbum}`
+                )
                 if (songPreview == null) {
                     console.log("I'm sorry, there is no song preview available")
                 } else {
@@ -84,7 +104,7 @@ if (command == "spotify-this-song") {
     }
 }
 
-// if no song is provided, default to "The Sign" by Ace of Base
+
 
 // movie-this
 if (command == "movie-this") {
