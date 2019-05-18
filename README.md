@@ -8,7 +8,7 @@ nodeLIRI accepts user input from the command line and returns data in a readable
 User enters command **"spotify-this-song"** followed by the song they wish to search.
 nodeLIRI will display song name, artist name, song album, and preview link to the track (if available):
 
-![](/images/spotify-tellitomyheart.gif)
+![](/images/spotify-tell-it-to-my-heart.gif)
 
 If **"spotify-this-song"** command is given with no song, nodeLIRI will by default search for "The Sign" for "Ace of Base"
 
