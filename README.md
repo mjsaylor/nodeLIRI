@@ -29,7 +29,7 @@ nodeLiri will display name, title, year released, ratings (IMDB + Rotten Tomatoe
 
 If **"movie-this"** command is given with no song, nodeLIRI will by default search for "Mr. Nobody"
 
-![](/images/movie-this-default)
+![](/images/movie-this-default.gif)
 
 ### Do What it Says
 User enters command **"do-what-it-says"**
@@ -38,13 +38,13 @@ nodeLIRI will automatically **"spotify-this-song"** _I Want it That Way by the B
 ![](/images/do-what-it-says.gif)
 
 ## Technologies Used
-*APIS
-    *Node-Spotify-API
-    *OMDB API
-    *Bands In Town API
-*Moment
-*DotEnv
-*Axios
+* APIS
+    * Node-Spotify-API
+    * OMDB API
+    * Bands In Town API
+* Moment
+* DotEnv
+* Axios
 
 
 
