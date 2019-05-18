@@ -99,7 +99,7 @@ if (input == undefined) {
         if (songPreview == null) {
             console.log("I'm sorry, there is no song preview available")
         } else {
-            console.log(songPreview)
+            console.log(`Song Preview link: ${songPreview}`)
         }
 
     });
